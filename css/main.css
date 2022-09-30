@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: #4F7651;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -97,15 +97,42 @@ textarea {
 
 
 html {
-  background-color: #fff;
+  background-color: #FFF9F1;
   height: 100%;
+  width: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
-  font-size: 1.25em;
+  font-family: 'Martel', serif;
+  padding: 0em 2em;
+  font-size: 1rem;
   height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-family: 'Playfair Display SC', serif;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Amiri', serif;
+    border-bottom: 1px solid rgb(50, 95, 58);
+  }
+
+main p {
+    font-size: 1.5rem;
+}
+
+header,
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .wrapper {
@@ -114,24 +141,24 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
-
+  max-width: 1200px;
 }
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: rgb(32, 32, 32);
-  line-height: 1.5em;
-  font-size: 1em;
-  background-color: #ffffff;
-  height: auto;
   display: flex;
-  width: 30%;
   justify-content: center;
   align-items: center;
+  color: rgb(79, 118, 81);
+  line-height: 1.5em;
 }
 
-
+footer {
+    border-top: 1px solid rgb(50, 95, 58);
+    padding: 30px 20px 0 0;
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: 1.25rem;
+  }
 
 /* ==========================================================================
    Helper classes
@@ -221,6 +248,12 @@ body {
       border-right: 1px solid rgb(17, 13, 13);
       padding-right: 30px;
     }
+}
+
+@media all and (max-width: 768px) {
+    .div-1, .div-2, .div-3 {
+        border-bottom: 1px solid rgb(50, 95, 58);
+      }
 }
 
 @media print,
